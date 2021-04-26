@@ -2,19 +2,23 @@
 	box-sizing: border-box;
 }
 
-body {
-    margin : 0px;
-    font-family: Open Sans;
-    background-color: #F4F7F6; 
-    /* background:transparent; */
+html {
+    margin-top: 0px;padding-top: 0px;
 }
+
+body {
+    margin : 0px 0px;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    background-color: #F4F7F6; 
+}
+
 /* HEADER */
 header {
     text-align: center;
     background-color: #1d1d1d;
     text-decoration-color: red;
     width : 100%;
-    margin : 0px;
+    margin : 0px 0px;
     margin-bottom: 0px;
 }
 
@@ -360,7 +364,7 @@ div.titre {
 
 
 /* MEDIA QUERIES */
-@media all and (max-width : 1024px){
+@media all and (min-width: 768px)and (max-width : 1024px){
     .projet  { width: 100%;max-width: 400px; margin: 30px auto;}
     .projet img { width: 90%; min-width: auto; height: auto; }
     .projet .picture { width: 90%; height: auto; }
@@ -376,7 +380,7 @@ div.titre {
 }
 
 /* RESPONSIVE DESIGN */
-@media only screen and (min-width: 502px)and (max-width: 767px) {
+@media only screen and (min-width: 502px) and (max-width: 767px) {
     .projet {
         position: relative;
         margin :  30px auto;
@@ -384,7 +388,7 @@ div.titre {
         max-width: 400px;
     }
 
-    .contener {width : 80%; margin : auto;}
+    .contener {width : 90%; margin : auto;}
 }
 
 @media only screen and (max-width: 501px) {
@@ -392,16 +396,31 @@ div.titre {
     header h2 {width : 90%;}
 
     /* CONTENU DE LA PAGE */
-    .intro {
+    .introa {
         font-size: 1.3em; 
-        line-height: 1.3em;
+        line-height: 1.7em;
+        width: 90%;
+        /* font-family: Arial, Helvetica, sans-serif; */
     }
 
-    .contener {width : 95%; margin : auto;}
+    section.introa p {
+        margin-left: 0px;margin-right: 0px;margin : auto auto;
+    }
+
+    .contener {width : 95%; margin : auto ;}
 
     .projet {
         position: relative;
         margin :  30px auto;
         width: 95%;
     }
+
+    .picture {
+        max-width : 400px;
+        width: auto;
+        /* height : 266px; */
+        overflow : hidden;
+        margin-bottom : 15px;
+    }
+
 }
