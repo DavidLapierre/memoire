@@ -381,6 +381,17 @@ div.titre {
 
 /* RESPONSIVE DESIGN */
 @media only screen and (min-width: 502px) and (max-width: 767px) {
+    .introa {
+        font-size: 1.3em; 
+        line-height: 1.7em;
+        width: 90%;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+
+    section.introa p {
+        margin-left: 0px;margin-right: 0px;margin : auto auto;
+    }
+
     .projet {
         position: relative;
         margin :  30px auto;
