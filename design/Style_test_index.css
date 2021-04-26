@@ -257,7 +257,7 @@ table p.numero {
     box-sizing: border-box;
     border-radius: 50%;
     display:inline-block;
-    padding-top:4px;
+    padding-top:2px;
     color:white;
     font-weight: bold;
     width:25px; height:25px;
@@ -359,25 +359,49 @@ div.titre {
 }
 
 
-/* POLICES */
-@font-face {
-    font-family: 'MINECRAFTPE';
-    src : url('../src/MINECRAFT PE.ttf') format('truetype')
-}
-
 /* MEDIA QUERIES */
-@media all and (max-width : 1000px){
-    .projet  { width: 100%; margin: 15px auto;}
-    /* .projetg, .projeth, .projeti,.projetj  { width: 100%; margin: 15px auto; } */
+@media all and (max-width : 1024px){
+    .projet  { width: 100%;max-width: 400px; margin: 30px auto;}
     .projet img { width: 90%; min-width: auto; height: auto; }
     .projet .picture { width: 90%; height: auto; }
     header h2 {width : 90%;}
     header h2 {width : 90%;}
     header h2 {width : 90%;}
     h3 {width : 95%; font-size : 1.2em;}
-    .contener {width : 85%; margin : auto;}
+    .contener {width : 95%; margin : auto;}
     .intro {width : 80%; margin: 10px auto;}
-    .introa {width : 90%; margin: 10px auto;}
+    /* .introa {width : 90%; margin: 10px auto;} */
     .bienvenue {width : 90%}
     .picture-project h3 {width: 100%; padding : 0% 15%; font-size: 1.2em; text-align: center; }
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 502px)and (max-width: 767px) {
+    .projet {
+        position: relative;
+        margin :  30px auto;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .contener {width : 80%; margin : auto;}
+}
+
+@media only screen and (max-width: 501px) {
+    /* HEADER */
+    header h2 {width : 90%;}
+
+    /* CONTENU DE LA PAGE */
+    .intro {
+        font-size: 1.3em; 
+        line-height: 1.3em;
+    }
+
+    .contener {width : 95%; margin : auto;}
+
+    .projet {
+        position: relative;
+        margin :  30px auto;
+        width: 95%;
+    }
 }

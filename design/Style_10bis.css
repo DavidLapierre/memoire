@@ -1,13 +1,9 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
     margin : 0px;
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     background-color: #F4F7F6; 
-    /* background:transparent; */
 }
+
 
 /* HEADER */
 header {
@@ -23,12 +19,7 @@ header figure {
     margin-bottom: 0px;
 }
 
-section {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-header h1 {
+h1 {
     color : #ffffff;
     font-size: 2.5em;  /* ceci est un commentaire */
     font-family: 'Indie Flower', cursive;
@@ -37,13 +28,35 @@ header h1 {
     margin-top : 0px;
     padding-top: 30px;
 }
-header h2 {
+
+.separator {
+	width : 40px;
+	height : 1px;
+    margin : 15px auto;
+	display : block;
+	background-color : #999999;
+	}
+
+h2 {
     color : white;
     font-size: 1.5em;  /* ceci est un commentaire */
     font-family: 'Indie Flower', cursive;
     text-align: center;
     width : 90%;
     margin: auto;
+}
+
+#logo {
+    vertical-align: middle;
+    margin-top: 35px;
+    width : 50px;
+    padding-bottom: 30px;
+    /* float: left; */
+}
+
+/* NAVIGATION */
+a {
+    text-decoration: none;
 }
 
 nav li {
@@ -61,10 +74,6 @@ ul {
     padding: 5px;
     margin-top: px;
     /* display: inline; */
-}
-
-nav a {
-    text-decoration: none;
 }
 
 nav {
@@ -89,6 +98,7 @@ nav li:hover {
 }
 
 /* CONTENU DE LA PAGE */
+/* INTRODUCTION */
 h3::before {
     content:  "«";
     color : grey;
@@ -107,13 +117,9 @@ h3::after {
     color : grey;
 }
 
-.intro {
-	font-size: 1.7em; 
-    text-align : justify;
-    line-height: 1.5em;
-    /* word-spacing: 0.3em; */
-	width : 80%;
-	margin : auto;
+section {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 p {
@@ -126,40 +132,70 @@ p + p {
     margin-top: 0;
 }
 
+section.intro {
+	font-size: 1.2em; 
+    text-align : justify;
+    line-height: 1.75em;
+	width : 80%;
+	margin : auto;
+}
+
+/* COURS */
+.slide {
+    width:100%;
+    height:800px;
+    overflow:visible;
+    text-align: center;
+    margin: 00px auto;
+}
+
+#MMs {
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : center;
+}
+
+.MM  {
+	margin : 30px;
+	display : inline-block;
+	background : white;
+    padding-bottom : 5px;
+    border: 0px black solid;
+	border-radius : 10px;
+    overflow : hidden;
+    box-shadow:  9px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+.MM ul {
+    text-align: center;
+    font-size: 2em;
+} 
+
+/* span .titre {
+    text-align: center;
+    justify-content: center;
+} */
+
+.picture {
+    /* width:400px; */
+    height : auto;
+}
 
 iframe {
     justify-content : center;
-    /* width : 300px;  */
+    width : 90%; 
+    height : 90%;
 	display : block;
 	margin : auto;
 	border-radius : 5px;
 	box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.picture-project p {
-    text-align: center; font-size: 1.5em;padding:0px 20px;
+* {
+	box-sizing: border-box;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 52.25%; /* ratio 16/9 */
-    height: 0; overflow: hidden;
-    clear: both;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 15%;
-    width: 70%;
-    height: 100%;
-    justify-content: center;
-    text-align: center;
-}
-
-
+/* PARTIE CONTACTEZ-MOI */
 #contact {
 	width : 80%;
     margin : auto;
@@ -172,6 +208,10 @@ iframe {
     background-image: radial-gradient(circle at 61.19% 8.26%, #ffffff 0, #becae5 50%, #5e7bad 100%);
 }
 
+#picture-project img {
+	width: 90%;
+}
+
 /* FOOTER */
 footer {
     background-color: #1d1d1d;
@@ -180,33 +220,14 @@ footer {
 	 padding : 15px;
 }
 
-@media only screen and (max-width: 501px) {
-    /* HEADER */
+/* MEDIA QUERIES */
+@media all and (max-width : 1000px){
     header h2 {width : 90%;}
-
-    /* CONTENU DE LA PAGE */
-    .intro {
-        font-size: 1.3em; 
-        line-height: 1.3em;
-        width : 90%;
-    }
-
-    .picture-project p {
-        text-align: center; font-size: 1.3em;padding:0px 20px;
-    }
-    .video-container {
-        position: relative;
-        padding-bottom: 66.25%; 
-        /* ratio 16/9 */
-        height: 0; overflow: hidden;
-        clear: both;
-    }
-
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        left: 5%;
-        width: 90%; /* avec le left 5% : 5% + 90% + 5% */
-        height: 100%;
-    }
+    header h2 {width : 90%;}
+    h3 {width : 95%; font-size : 1.2em;}
+    .contener {width : 85%; margin : auto;}
+    .intro {width : 80%; margin: 10px auto;}
+    .introa {width : 90%; margin: 10px auto;}
+    .bienvenue {width : 90%}
+    .picture-project h3 {width: 100%; padding : 0% 15%; font-size: 1.2em; text-align: center; }
 }
