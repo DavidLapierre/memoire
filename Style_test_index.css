@@ -392,6 +392,10 @@ div.titre {
     }
 
     .contener {width : 90%; margin : auto;}
+    
+    .projet  { width: 100%; margin: 15px auto; }
+    .projet img { width: 100%; min-width: auto; height: auto; }
+    .projet .picture { width: 100%; height: auto; }
 }
 
 @media only screen and (max-width: 558px) {
