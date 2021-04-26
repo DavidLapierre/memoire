@@ -372,7 +372,7 @@ div.titre {
 }
 
 /* RESPONSIVE DESIGN */
-@media only screen and (min-width: 502px) and (max-width: 767px) {
+@media only screen and (min-width: 559px) and (max-width: 767px) {
     .introa {
         font-size: 1.3em; 
         line-height: 1.7em;
@@ -394,7 +394,7 @@ div.titre {
     .contener {width : 90%; margin : auto;}
 }
 
-@media only screen and (max-width: 501px) {
+@media only screen and (max-width: 558px) {
     /* HEADER */
     header h2 {width : 90%;}
 
@@ -412,18 +412,7 @@ div.titre {
 
     .contener {width : 95%; margin : auto ;}
 
-    .projet {
-        position: relative;
-        margin :  30px auto;
-        width: 90%;
-    }
-
-    .picture {
-        max-width : 400px;
-        width: auto;
-        /* height : 266px; */
-        overflow : hidden;
-        margin-bottom : 15px;
-    }
-
+    .projet  { width: 100%; margin: 15px auto; }
+    .projet img { width: 100%; min-width: auto; height: auto; }
+    .projet .picture { width: 100%; height: auto; }
 }
