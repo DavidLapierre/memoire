@@ -253,7 +253,7 @@ table p.numero {
     box-sizing: border-box;
     border-radius: 50%;
     display:inline-block;
-    padding-top:2px;
+    padding-top:0px;
     color:white;
     font-weight: bold;
     width:25px; height:25px;
