@@ -394,7 +394,7 @@ div.titre {
     .contener {width : 90%; margin : auto;}
     
     .projet  { width: 100%; margin: 15px auto; }
-    .projet img { width: 100%; min-width: auto; height: auto; }
+    .projet img { width: 95%; min-width: auto; height: auto; }
     .projet .picture { width: 100%; height: auto; }
 }
 
@@ -417,6 +417,6 @@ div.titre {
     .contener {width : 95%; margin : auto ;}
 
     .projet  { width: 90%; margin: 25px auto; }
-    .projet img { width: 100%; min-width: auto; height: auto; }
+    .projet img { width: 95%; min-width: auto; height: auto; }
     .projet .picture { width: 100%; height: auto; }
 }
