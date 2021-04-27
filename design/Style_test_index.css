@@ -406,7 +406,7 @@ div.titre {
     .introa {
         font-size: 1.3em; 
         line-height: 1.7em;
-        width: 90%;
+        width: 95%;
         /* font-family: Arial, Helvetica, sans-serif; */
     }
 
@@ -414,9 +414,9 @@ div.titre {
         margin-left: 0px;margin-right: 0px;margin : auto auto;
     }
 
-    .contener {width : 90%; margin : auto ;}
+    .contener {width : 95%; margin : auto ;}
 
-    .projet  { width: 100%; margin: 25px auto; }
+    .projet  { width: 90%; margin: 25px auto; }
     .projet img { width: 100%; min-width: auto; height: auto; }
     .projet .picture { width: 100%; height: auto; }
 }
