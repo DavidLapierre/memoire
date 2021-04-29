@@ -263,6 +263,31 @@ iframe {
         line-height: 1.5em;
         width : 90%;
     }
+
+    #MMs {
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : center;
+        width: 100%;
+    }
+
+    .MM  {
+        width :100%;
+        margin : 10px 0;
+    }
+    
+    .MM ul {
+        text-align: center;
+        font-size: 1.3em;
+        margin : 10px 0 ;
+    }
+
+    section.intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 90%;
+        /* margin: 0px 0px; */
+    }
     
 }
 
