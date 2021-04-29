@@ -209,14 +209,118 @@ footer {
 	 padding : 15px;
 }
 
-/* MEDIA QUERIES */
-@media all and (max-width : 1000px){
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+    /* HEADER */
+    nav {
+        font-size: 1.5em;
+    }
+
+     /* CONTENU DE LA PAGE */
+     .intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 93%;
+    }
+
+    .picture-project p {
+        text-align: center; font-size: 1.3em;padding:0px 20px;
+    }
+
+    .MM  {
+        margin : 10px;
+      }
+    
+    .MM ul {
+        font-size: 1.8em;
+        margin: 8px auto;
+    } 
+
+    .video-container {
+        position: relative;
+        padding-bottom: 66.25%; 
+        /* ratio 16/9 */
+        height: 0; overflow: hidden;
+        clear: both;
+    }
+    
+}
+
+@media only screen and (max-width: 558px) {
+    /* HEADER */
     header h2 {width : 90%;}
+  
+    /* CONTENU DE LA PAGE */
+    .intro {
+        font-size: 1.3em; 
+        line-height: 1.3em;
+        width : 93%;
+    }
+
+    .picture-project p {
+        text-align: center; font-size: 1.3em;padding:0px 20px;
+    }
+
+    .MM  {
+        margin : 10px;
+      }
+    
+    .MM ul {
+        font-size: 1.7em;
+        margin: 5px auto;
+    } 
+
+    .video-container {
+        position: relative;
+        padding-bottom: 66.25%; 
+        /* ratio 16/9 */
+        height: 0; overflow: hidden;
+        clear: both;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        left: 5%;
+        width: 90%; /* avec le left 5% : 5% + 90% + 5% */
+        height: 100%;
+    }
+}
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+    /* HEADER */
+    nav {
+        font-size: 1.5em;
+    }
+    
+     /* CONTENU DE LA PAGE */
+     .contener { width: 90%;}
+
+     .intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 558px) {
+    /* HEADER */
     header h2 {width : 90%;}
-    h3 {width : 95%; font-size : 1.2em;}
-    .contener {width : 85%; margin : auto;}
-    .intro {width : 80%; margin: 10px auto;}
-    .introa {width : 90%; margin: 10px auto;}
-    .bienvenue {width : 90%}
-    .picture-project h3 {width: 100%; padding : 0% 15%; font-size: 1.2em; text-align: center; }
+  
+    /* CONTENU DE LA PAGE */
+    .contener { width: 90%;}
+
+    .intro {
+        font-size: 1.3em; 
+        line-height: 1.3em;
+        width : 100%;
+    }
+
+    .pictos {
+        width : 100%;
+        margin : auto;
+    }
+
+    
 }
