@@ -148,7 +148,7 @@ span .titre {
 /* .MM img {
     max-width: 80%;
     /* height: 166px; */
-} */
+/* } */ */
 
 .picture {
     width:400px;
@@ -212,39 +212,7 @@ iframe {
 	width: 90%;
 }
 
-#stage {
-    margin: 1em auto;
-    width:90%;
-    /* width: 382px; */
-    /* height: 292px; */
-  }
 
-  #stage a {
-    position: absolute;
-  }
-  #stage a img {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #fff;
-  }
-
-  #stage a:nth-of-type(1) {
-    animation-name: fader;
-    animation-delay: 4s;
-    animation-duration: 1s;
-    z-index: 20;
-  }
-  #stage a:nth-of-type(2) {
-    z-index: 10;
-  }
-  #stage a:nth-of-type(n+3) {
-    display: none;
-  }
-
-  @keyframes fader {
-    from { opacity: 1.0; }
-    to   { opacity: 0.0; }
-  } 
 
 /* CLASSES */
 .separator {
@@ -280,17 +248,64 @@ iframe {
 
 
 
-/* MEDIA QUERIES */
-@media all and (max-width : 1000px){
-    .projeta,.projetb, .projetc, .projetd, .projete, .projetf, .projetg, .projeth, .projeti  { width: 100%; margin: 15px auto; }
-    .projeta img { width: 100%; min-width: auto; height: auto; }
-    .projeta .picture { width: 100%; height: auto; }
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+    /* HEADER */
+    nav {
+        font-size: 1.5em;
+    }
+    
+     /* CONTENU DE LA PAGE */
+     .contener { width: 90%;}
+
+     .introa, .intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 558px) {
+    /* HEADER */
     header h2 {width : 90%;}
-    header h2 {width : 90%;}
-    h3 {width : 95%; font-size : 1.2em;}
-    .contener {width : 85%; margin : auto;}
-    .intro {width : 80%; margin: 10px auto;}
-    .introa {width : 90%; margin: 10px auto;}
-    .bienvenue {width : 90%}
-    .picture-project h3 {width: 100%; padding : 0% 15%; font-size: 1.2em; text-align: center; }
+  
+    /* CONTENU DE LA PAGE */
+    .contener { width: 90%;}
+
+    .introa {
+        font-size: 1.3em; 
+        line-height: 1.3em;
+        width : 100%;
+    }
+
+    .pictos {
+        width : 100%;
+        margin : auto;
+    }
+
+    #MMs {
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : center;
+        width: 100%;
+    }
+
+    .MM  {
+        width :100%;
+        margin : 10px 0;
+    }
+    
+    .MM ul {
+        text-align: center;
+        font-size: 1.3em;
+        margin : 10px 0 ;
+    }
+
+    section.intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 90%;
+        /* margin: 0px 0px; */
+    }
 }
