@@ -1,7 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
     margin : 0px;
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     background-color: #F4F7F6; 
+    /* background:transparent; */
 }
 
 /* HEADER */
@@ -18,7 +23,12 @@ header figure {
     margin-bottom: 0px;
 }
 
-h1 {
+section {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header h1 {
     color : #ffffff;
     font-size: 2.5em;  /* ceci est un commentaire */
     font-family: 'Indie Flower', cursive;
@@ -27,35 +37,13 @@ h1 {
     margin-top : 0px;
     padding-top: 30px;
 }
-
-.separator {
-	width : 40px;
-	height : 1px;
-    margin : 15px auto;
-	display : block;
-	background-color : #999999;
-	}
-
-h2 {
+header h2 {
     color : white;
     font-size: 1.5em;  /* ceci est un commentaire */
     font-family: 'Indie Flower', cursive;
     text-align: center;
     width : 90%;
     margin: auto;
-}
-
-#logo {
-    vertical-align: middle;
-    margin-top: 35px;
-    width : 50px;
-    padding-bottom: 30px;
-    /* float: left; */
-}
-
-/* NAVIGATION */
-a {
-    text-decoration: none;
 }
 
 nav li {
@@ -73,6 +61,10 @@ ul {
     padding: 5px;
     margin-top: px;
     /* display: inline; */
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav {
@@ -97,7 +89,6 @@ nav li:hover {
 }
 
 /* CONTENU DE LA PAGE */
-/* INTRODUCTION */
 h3::before {
     content:  "«";
     color : grey;
@@ -116,9 +107,13 @@ h3::after {
     color : grey;
 }
 
-section {
-    text-align: center;
-    padding-bottom: 20px;
+.intro {
+	font-size: 1.7em; 
+    text-align : justify;
+    line-height: 1.5em;
+    /* word-spacing: 0.3em; */
+	width : 80%;
+	margin : auto;
 }
 
 p {
@@ -131,22 +126,15 @@ p + p {
     margin-top: 0;
 }
 
-section.intro {
-	font-size: 1.2em; 
-    text-align : justify;
-    line-height: 1.75em;
-	width : 80%;
-	margin : auto;
-}
 
-/* COURS */
-/* .slide {
-    width:100%;
-    height:800px;
-    overflow:visible;
-    text-align: center;
-    margin: 00px auto;
-} */
+iframe {
+    justify-content : center;
+    /* width : 300px;  */
+	display : block;
+	margin : auto;
+	border-radius : 5px;
+	box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 #MMs {
 	display : flex;
@@ -170,21 +158,30 @@ section.intro {
     font-size: 2em;
 } 
 
-/* span .titre {
-    text-align: center;
+.picture-project p {
+    text-align: center; font-size: 1.5em;padding:0px 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 52.25%; /* ratio 16/9 */
+    height: 0; overflow: hidden;
+    clear: both;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 100%;
     justify-content: center;
-} */
-
-.picture {
-    /* width:400px; */
-    height : auto;
+    text-align: center;
 }
 
-* {
-	box-sizing: border-box;
-}
 
-/* PARTIE CONTACTEZ-MOI */
 #contact {
 	width : 80%;
     margin : auto;
@@ -197,10 +194,6 @@ section.intro {
     background-image: radial-gradient(circle at 61.19% 8.26%, #ffffff 0, #becae5 50%, #5e7bad 100%);
 }
 
-#picture-project img {
-	width: 90%;
-}
-
 /* FOOTER */
 footer {
     background-color: #1d1d1d;
@@ -209,14 +202,80 @@ footer {
 	 padding : 15px;
 }
 
-/* MEDIA QUERIES */
-@media all and (max-width : 1000px){
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+    /* HEADER */
+    nav {
+        font-size: 1.5em;
+    }
+
+     /* CONTENU DE LA PAGE */
+     .intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 90%;
+    }
+
+    .picture-project p {
+        text-align: center; font-size: 1.3em;padding:0px 20px;
+    }
+
+    .MM  {
+        margin : 10px;
+      }
+    
+    .MM ul {
+        font-size: 1.8em;
+        margin: 8px auto;
+    } 
+
+    .video-container {
+        position: relative;
+        padding-bottom: 66.25%; 
+        /* ratio 16/9 */
+        height: 0; overflow: hidden;
+        clear: both;
+    }
+    
+}
+
+@media only screen and (max-width: 558px) {
+    /* HEADER */
     header h2 {width : 90%;}
-    header h2 {width : 90%;}
-    h3 {width : 95%; font-size : 1.2em;}
-    .contener {width : 85%; margin : auto;}
-    .intro {width : 80%; margin: 10px auto;}
-    .introa {width : 90%; margin: 10px auto;}
-    .bienvenue {width : 90%}
-    .picture-project h3 {width: 100%; padding : 0% 15%; font-size: 1.2em; text-align: center; }
+  
+    /* CONTENU DE LA PAGE */
+    .intro {
+        font-size: 1.3em; 
+        line-height: 1.3em;
+        width : 90%;
+    }
+
+    .picture-project p {
+        text-align: center; font-size: 1.3em;padding:0px 20px;
+    }
+
+    .MM  {
+        margin : 10px;
+      }
+    
+    .MM ul {
+        font-size: 1.7em;
+        margin: 5px auto;
+    } 
+
+    .video-container {
+        position: relative;
+        padding-bottom: 66.25%; 
+        /* ratio 16/9 */
+        height: 0; overflow: hidden;
+        clear: both;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        left: 5%;
+        width: 90%; /* avec le left 5% : 5% + 90% + 5% */
+        height: 100%;
+    }
 }
