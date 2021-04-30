@@ -323,8 +323,14 @@ iframe {
     
     .MM ul {
         text-align: center;
-        font-size: 1.3em;
-        margin : 10px 0 ;
+        margin : 0px 0px ;
+        padding : 0px 0px;
+    }
+
+    .MM li {
+        text-align: center;
+        font-size: 0.5em;
+        margin : 0px 5px ;
     }
 
     section.intro {
