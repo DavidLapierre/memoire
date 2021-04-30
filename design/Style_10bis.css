@@ -264,11 +264,20 @@ footer {
     .MM  {
         margin : 10px;
       }
-    
+
     .MM ul {
-        font-size: 1.7em;
-        margin: 5px auto;
-    } 
+        text-align: center;
+        margin : 0px 0px ;
+        padding : 0px 0px;
+    }
+
+    .MM li {
+        text-align: center;
+        font-size: 0.5em;
+        margin : 0px 5px ;
+    }
+
+    span.facultatif {display: none;}
 
     .video-container {
         position: relative;
@@ -316,11 +325,17 @@ footer {
         line-height: 1.3em;
         width : 100%;
     }
-
+    
     .pictos {
         width : 100%;
         margin : auto;
     }
-
+    
+    section.intro {
+        font-size: 1.5em; 
+        line-height: 1.5em;
+        width : 90%;
+        /* margin: 0px 0px; */
+    }
     
 }

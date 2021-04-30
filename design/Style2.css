@@ -263,6 +263,8 @@ footer {
         margin: 5px auto;
     } 
 
+    span.facultatif {display: none;}
+    
     .video-container {
         position: relative;
         padding-bottom: 66.25%; 
