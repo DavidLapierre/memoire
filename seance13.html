@@ -120,7 +120,7 @@
 
                             <div class="MM">
 								<div class="picture">
-									<img src="pictures/pictos_SVT.jpg" width="100%" />
+                                    <a class="example-image-" href="pictures/pictos_SVT.jpg" data-lightbox="example-1"><img class="example-image" src="pictures/pictos_SVT.jpg" alt="image-1"  width="100%"/></a>
                                 </div>
                         <ul>
 							<li><span class="facultatif">LES </span>PICTOGRAMMES <span class="facultatif">UTILISÉS  </span></li>
@@ -129,7 +129,7 @@
 
                             <div class="MM">
                             <div class="picture">
-									<img src="pictures/MM_SVT-600dpi.jpg" width="100%" />
+                                <a class="example-image-" href="pictures/MM_SVT-600dpi.jpg" data-lightbox="example-1"><img class="example-image" src="pictures/MM_SVT-600dpi.jpg" alt="image-1"  width="100%"/></a>
 								</div>
 						   <ul>
 							<li> <span class="facultatif">LA</span> CARTE MENTALE <span class="facultatif">DU COURS DE SVT</span></li>
@@ -181,7 +181,13 @@
 
 		gtag('config', 'G-P2K2Y20FFD');
 		</script>
-
+        <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+        <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+        })
+        </script>
     </body>
 
 </html>

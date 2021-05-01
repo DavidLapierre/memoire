@@ -52,7 +52,7 @@
 						<div id="MMs">
                             <div class="MM">
 								<div class="picture">
-									<img src="pictures/avant.jpg" width="100%" />
+                                    <a class="example-image-" href="pictures/avant.jpg" data-lightbox="example-1"><img class="example-image" src="pictures/avant.jpg" alt="image-1"  width="100%"/></a>
 								</div>
 						   <!-- <span class="titre"> AVANT </span> -->
 						   <ul>
@@ -62,7 +62,7 @@
 
                             <div class="MM">
                             <div class="picture">
-									<img src="pictures/apres.jpg" width="100%" />
+                                <a class="example-image-" href="pictures/apres.jpg" data-lightbox="example-1"><img class="example-image" src="pictures/apres.jpg" alt="image-1"  width="100%"/></a>
 								</div>
 						   <!-- <span class="titre"> APRÈS </span> -->
 						   <ul>
@@ -135,7 +135,13 @@
 
 		gtag('config', 'G-P2K2Y20FFD');
 		</script>
-
+        <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+        <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+        })
+        </script>
     </body>
 
 </html>
