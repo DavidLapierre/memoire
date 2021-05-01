@@ -209,6 +209,7 @@ footer {
     text-align: center;
 	 padding : 15px;
 }
+
 /* PARTIE IMAGES PLEIN ECRAN */
 body.lb-disable-scrolling {
     overflow: hidden;
