@@ -134,7 +134,7 @@ nav li:hover {
 	margin : auto;
 }
 
-p {
+section.introa p {
     margin-bottom: 6; 
     text-indent: 1.5em;
 }
