@@ -255,7 +255,7 @@ table p.numero {
     box-sizing: border-box;
     border-radius: 50%;
     display:inline-block;
-    padding-top:0px;
+    padding-top:2px;
     color:white;
     font-weight: bold;
     width:25px; height:25px;
