@@ -136,14 +136,12 @@ nav li:hover {
 
 p {
     margin-bottom: 6; 
+    text-indent: 1.5em;
 }
 
 /* Pour  faire un retrait de 1ère ligne */
 /* dans les introductions des séances : */
-p + p {
-    text-indent: 1.5em;
-    margin-top: 0;
-}
+
 
 
 /* PROJETS (flex items) */
@@ -414,6 +412,8 @@ div.titre {
 
     section.introa p {
         margin-left: 0px;margin-right: 0px;margin : auto auto;
+        margin-bottom: 10px;
+        text-indent: 1.5em;
     }
 
     .contener {width : 95%; margin : auto ;}
