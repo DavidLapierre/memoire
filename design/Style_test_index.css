@@ -253,11 +253,13 @@ table p.numero {
     box-sizing: border-box;
     border-radius: 50%;
     display:inline-block;
+    text-indent: 0em;
     padding-top:2px;
+    padding-right: 0px;
     color:white;
     font-weight: bold;
     width:25px; height:25px;
-    margin : 0 0 0 30px;
+    margin : 0 0px 0 10px;
     text-align: center;
 }
 
