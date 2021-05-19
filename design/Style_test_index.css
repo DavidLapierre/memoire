@@ -188,6 +188,10 @@ section.introa p {
     border-color: rgb(251,225,184);
 }
 
+.projet5:hover {
+    border-color: rgb(250,204,206);
+}
+
 .projet img {
 	min-width : 400px;
 	height : 266px;
@@ -237,6 +241,10 @@ p.domaine {
 
 .domaine4 {
     background-color: rgb(243, 174, 62);
+}
+
+.domaine5 {
+    background-color: rgb(248, 142, 147);
 }
 
 /* SÉPARATEUR */
@@ -296,6 +304,15 @@ table.description3 td:nth-child(2) {
 table.description4 td:nth-child(2) {
     color:rgb(243, 190, 104);
 }
+
+.description5 p.numero {
+    background-color: rgb(248, 142, 147);
+}
+
+table.description5 td:nth-child(2) {
+    color:rgb(250, 112, 119);
+}
+rgb(250,204,206);
 
 /* SECTION BIENVENUE */
 .bienvenue {
