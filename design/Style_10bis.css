@@ -140,6 +140,12 @@ section.intro {
 	margin : auto;
 }
 
+#frise {
+  margin-left :auto;
+  margin-right: auto;
+  width:60%
+}
+
 /* COURS */
 [style*="--aspect-ratio"] > :first-child {
   width: 100%;
@@ -473,6 +479,12 @@ body.lb-disable-scrolling {
         height: 0; overflow: hidden;
         clear: both;
     }
+
+    #frise {
+      margin-left :auto;
+      margin-right: auto;
+      width:100%;
+    }
     
 }
 
@@ -524,6 +536,12 @@ body.lb-disable-scrolling {
         width: 90%; /* avec le left 5% : 5% + 90% + 5% */
         height: 100%;
     }
+
+    #frise {
+      margin-left :auto;
+      margin-right: auto;
+      width:100%;
+    }
 }
 /* RESPONSIVE DESIGN */
 @media only screen and (min-width: 559px) and (max-width: 767px) {
@@ -539,6 +557,12 @@ body.lb-disable-scrolling {
         font-size: 1.5em; 
         line-height: 1.5em;
         width : 100%;
+    }
+
+    #frise {
+      margin-left :auto;
+      margin-right: auto;
+      width:100%;
     }
     
 }
@@ -566,6 +590,12 @@ body.lb-disable-scrolling {
         line-height: 1.3em;
         width : 90%;
         /* margin: 0px 0px; */
+    }
+
+    #frise {
+      margin-left :auto;
+      margin-right: auto;
+      width:100%;
     }
     
 }
